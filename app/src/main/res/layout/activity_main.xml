@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.example.android.icecreamorder.MainActivity">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/increment"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:onClick="increment"
+            android:text="+"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/iceCream_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/decrement"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:onClick="decrement"
+            android:text="-"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Treat On Top"
+        android:textSize="16sp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/choclolate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnRadioButtonClicked"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="Chocolate (Extra 15 Rs)"
+            android:textSize="14sp"
+            android:textColor="#000" />
+
+        <RadioButton
+            android:id="@+id/strawberry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnRadioButtonClicked"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="Strawberry (Extra 10 Rs)"
+            android:textSize="14sp"
+            android:textColor="#000" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toppings"
+        android:textSize="16sp"/>
+
+    <CheckBox
+        android:id="@+id/nuts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="Nuts (Extra 5 Rs)"
+        android:textSize="14sp"
+        android:textColor="#000" />
+
+    <CheckBox
+        android:id="@+id/jelly"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:paddingLeft="16dp"
+        android:text="Jelly (Extra 10 Rs)"
+        android:textSize="14sp"
+        android:textColor="#000" />
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:onClick="order"
+        android:text="order" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:contextClickable="true"
+        android:onClick="credit"
+        app:srcCompat="@drawable/d"
+        android:layout_marginLeft="290sp"
+        android:layout_marginTop="80sp"/>
+
+</LinearLayout>
